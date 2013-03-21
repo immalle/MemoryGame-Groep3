@@ -126,6 +126,60 @@
   <ItemGroup>
     <None Include="Resources\Image3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-138-2132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60a7c33858201c12d5e60537253a2b6e-d51qcrv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1093352_1344366083534_full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventure-time.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloo_by_phungdinhdung.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chowder_vector_by_tr_mario-d45vteg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cowardly_dog_by_disneygirl52-d5o1qbu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hm-1bev3727__1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipad_18866_adventure_time.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jerry-23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KND___Kuki_Sanban___Number_3_by_Notaku.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_loving_eddy_by_bucketooth-d3c44ka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mzl.vlsbwhki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerpuff-girls-wallpaper-pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protoboy_vs_robotboy_by_xxsh4kzxx-d5rqtrn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scooby-doo-girls-pj-ruh-roh-close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoutmaster_alonquin_c__lumpus_by_justino16-d3l80mt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv_cartoon_network_dexters_laboratory_1680x1050_wallpaper_Art HD Wallpaper_1024x1024_www.wallpaperhi.com.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
