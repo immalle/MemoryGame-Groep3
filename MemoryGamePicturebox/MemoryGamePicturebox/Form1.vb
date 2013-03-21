@@ -29,8 +29,6 @@
         list.Add(My.Resources.ResourceManager.GetObject("Image17"))
         list.Add(My.Resources.ResourceManager.GetObject("Image18"))
         list.Add(My.Resources.ResourceManager.GetObject("Image19"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image20"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image21"))
         list.Add(My.Resources.ResourceManager.GetObject("Image4"))
         list.Add(My.Resources.ResourceManager.GetObject("Image5"))
         list.Add(My.Resources.ResourceManager.GetObject("Image6"))
@@ -47,8 +45,7 @@
         list.Add(My.Resources.ResourceManager.GetObject("Image17"))
         list.Add(My.Resources.ResourceManager.GetObject("Image18"))
         list.Add(My.Resources.ResourceManager.GetObject("Image19"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image20"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image21"))
+      
 
 
         Dim rand As New Random
@@ -56,12 +53,12 @@
         Dim item As Object
         Dim listIndex As Integer = 0
 
-        For i = 0 To 4
-            For j = 0 To 8
+        For i = 0 To 5
+            For j = 0 To 7
 
                 Dim picbox As New PictureBox()
                 picbox.Size = New Size(100, 100)
-                picbox.Location = New Point(150 * i, 150 * j)
+                picbox.Location = New Point(150 * j, 150 * i)
                 picbox.SizeMode = PictureBoxSizeMode.StretchImage
 
                 picbox.Image = list(listIndex)
