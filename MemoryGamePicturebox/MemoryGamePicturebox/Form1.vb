@@ -4,6 +4,8 @@
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
+
+
         Dim list As New ArrayList
 
         'list.Add(My.Resources.ResourceManager.GetObject("Image1"))
@@ -52,6 +54,7 @@
         Dim index As Integer
         Dim item As Object
         Dim listIndex As Integer = 0
+        Dim getalIndex As String
 
         For i = 0 To 5
             For j = 0 To 7
@@ -61,22 +64,27 @@
                 picbox.Location = New Point(150 * j, 150 * i)
                 picbox.SizeMode = PictureBoxSizeMode.StretchImage
 
-                picbox.Image = list(listIndex)
+                'picbox.Image = list(listIndex)
+                picbox.Tag = list(listIndex)
                 listIndex += 1
+                getalIndex = listIndex.ToString()
 
+                picbox.Image = My.Resources.ResourceManager.GetObject("ImageAchterzijde")
                 Me.Controls.Add(picbox)
-
+                AddHandler picbox.MouseClick, AddressOf PicboxMouseClickEventHandler
             Next
         Next
-
-
-
-        'AddHandler picbox.MouseEnter, AddressOf PicboxOnMouseEnterEventHandler
     End Sub
 
-    'Private Sub PicboxOnMouseEnterEventHandler(sender As Label, e As System.EventArgs)
-    '    sender.BackColor = Color.Red
-    'End Sub
+    Private Sub PicboxMouseClickEventHandler(sender As PictureBox, e As System.EventArgs)
+        Dim temp As Object
+
+        temp = sender.Image
+        sender.Image = sender.Tag
+
+        sender.Tag = temp
+
+    End Sub
 End Class
 
 

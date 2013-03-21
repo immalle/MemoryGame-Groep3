@@ -180,6 +180,9 @@
   <ItemGroup>
     <None Include="Resources\tv_cartoon_network_dexters_laboratory_1680x1050_wallpaper_Art HD Wallpaper_1024x1024_www.wallpaperhi.com.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaartachterkantvierkant.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
