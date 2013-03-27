@@ -2,52 +2,58 @@
 
 
 
+
+
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
 
-
+        Dim keuze1 As String
+        Dim keuze2 As String
         Dim list As New ArrayList
 
-        'list.Add(My.Resources.ResourceManager.GetObject("Image1"))
-        'list.Add(My.Resources.ResourceManager.GetObject("Image2"))
-        'list.Add(My.Resources.ResourceManager.GetObject("Image3"))
-        'list.Add(My.Resources.ResourceManager.GetObject("Image1"))
-        'list.Add(My.Resources.ResourceManager.GetObject("Image2"))
-        'list.Add(My.Resources.ResourceManager.GetObject("Image3"))
+        For i = 1 To 16
+            Dim img As Image
 
-        list.Add(My.Resources.ResourceManager.GetObject("Image4"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image5"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image6"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image7"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image8"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image9"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image10"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image11"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image12"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image13"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image14"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image15"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image16"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image17"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image18"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image19"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image4"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image5"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image6"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image7"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image8"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image9"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image10"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image11"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image12"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image13"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image14"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image15"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image16"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image17"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image18"))
-        list.Add(My.Resources.ResourceManager.GetObject("Image19"))
-      
+            img = My.Resources.ResourceManager.GetObject("Image" & i)
+            img.Tag = "Image" & i
+
+            list.Add(img)
+        Next
+
+        'list.Add(My.Resources.ResourceManager.GetObject("Image1"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image2"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image3"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image4"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image5"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image6"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image7"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image8"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image9"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image10"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image11"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image12"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image13"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image14"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image15"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image16"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image1"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image2"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image3"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image4"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image5"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image6"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image7"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image8"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image9"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image10"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image11"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image12"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image13"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image14"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image15"))
+        'list.Add(My.Resources.ResourceManager.GetObject("Image16"))
+
+
 
 
         Dim rand As New Random
@@ -74,9 +80,15 @@
                 AddHandler picbox.MouseClick, AddressOf PicboxMouseClickEventHandler
             Next
         Next
+
+
     End Sub
 
     Private Sub PicboxMouseClickEventHandler(sender As PictureBox, e As System.EventArgs)
+
+
+        'sender.Image.Tag = 
+
         Dim temp As Object
 
         temp = sender.Image
@@ -85,6 +97,8 @@
         sender.Tag = temp
 
     End Sub
+
+   
 End Class
 
 

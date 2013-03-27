@@ -116,44 +116,9 @@ Namespace My.Resources
             End Get
         End Property
         
-        Friend ReadOnly Property Image17() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Image17", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        Friend ReadOnly Property Image18() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Image18", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        Friend ReadOnly Property Image19() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Image19", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
         Friend ReadOnly Property Image2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Image2", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        Friend ReadOnly Property Image20() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Image20", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        Friend ReadOnly Property Image21() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Image21", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

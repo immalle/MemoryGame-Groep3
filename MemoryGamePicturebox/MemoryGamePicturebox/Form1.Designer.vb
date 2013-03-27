@@ -22,8 +22,13 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
+        '
+        'Timer1
+        '
         '
         'Form1
         '
@@ -38,5 +43,6 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
